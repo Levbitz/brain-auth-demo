@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
-
+import { AuthContext } from '../../lib/context/auth'
 function Login() {
+  const {user} = useContext(AuthContext)
+  console.log(user);
+  
   return (
     <div>
     <div className='form_wrap'>
