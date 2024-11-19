@@ -16,7 +16,8 @@ function Register() {
         e.preventDefault()
         try {
          const user = await createUserWithEmailAndPassword(auth,email,password)
-         navigate('/', {replace:true})
+
+        navigate('/', {replace:true})
             console.log(user)
         } catch (error) {
             console.log(error)
